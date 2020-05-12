@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-//import { RecipeRoutingModule } from './recipe-routing.module';
+import { RecipeRoutingModule } from './recipe-routing.module';
 import { RecipeComponent } from './recipe.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipe-item/recipe-item.component';
@@ -16,6 +16,7 @@ import { RecipeService } from './recipe.service';
         SharedModule,
         ReactiveFormsModule,
         HttpClientModule,
+        RecipeRoutingModule
     ],
     declarations: [
         RecipeComponent,
