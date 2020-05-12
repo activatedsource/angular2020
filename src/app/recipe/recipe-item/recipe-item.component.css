@@ -1,0 +1,8 @@
+.selectedRecipeStyle {
+    background-color: gray;
+    color: white;
+}
+
+.list-group-item:hover {
+    background-color: lightsteelblue;
+}

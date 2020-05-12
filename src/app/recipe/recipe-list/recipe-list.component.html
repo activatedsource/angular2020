@@ -1,0 +1,9 @@
+<div class="row" style="padding-top: 16px; padding-bottom: 16px;">
+    <div class="col">
+        <input type="text" [(ngModel)]="serachValue" placeholder="search by name...">
+        <br><br>
+        <app-recipe-item *ngFor="let recipe of recipes | listFiler:serachValue" [recipe]="recipe"
+            (click)="selected(recipe)">
+        </app-recipe-item>
+    </div>
+</div>

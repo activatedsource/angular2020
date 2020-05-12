@@ -1,0 +1,7 @@
+.navbar-nav > .active > a {
+ 
+  background-color: lightgray;    
+}
+.nav-item > a:hover {
+    background-color: lightsteelblue;
+} 

@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-12">
+
+        <form #form="ngForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" ngModel name="name" required #nameField="ngModel">
+                    <span *ngIf="nameField.touched && nameField.invalid">
+                        Item name is required
+                    </span>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="amount">Amount</label>
+                    <input class="form-control" type="number" id="amount" ngModel name="amount" #amtField="ngModel"
+                        required [pattern]="'^[1-9]+[0-9]*$'" />
+                    <span *ngIf="amtField.touched && amtField.invalid">
+                        Item amount is required
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding: 12px;">
+                    <button class="btn btn-secondary" type="submit"
+                        [disabled]="!form.valid">{{getLabel(editMode)}}</button>
+                    <button class="btn btn-secondary" type="button" style="margin-right: 12px; margin-left: 12px;"
+                        (click)="deleteItem()" [disabled]="!this.editMode">Delete</button>
+                    <button class="btn btn-secondary" type="button" (click)="clearForm()">Clear</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
