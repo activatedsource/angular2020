@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Recipe } from '../shared/model/recipe.model';
-import { DataStoreService } from '../auth/data-store.service';
+import { Recipe } from '../../shared/model/recipe.model';
+import { DataStoreService } from './data-store.service';
 
 @Injectable()
 export class RecipeService {
@@ -17,7 +17,7 @@ export class RecipeService {
             if (recipes) {
                 this.initRecipeStream(recipes);
             }
-        })
+        });
     }
 
     initRecipeStream(recipes: Recipe[]) {

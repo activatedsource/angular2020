@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Recipe } from '../shared/model/recipe.model';
-import { User } from './user.model';
+import { Recipe } from '../../shared/model/recipe.model';
+import { User } from '../../shared/model/user.model';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable()

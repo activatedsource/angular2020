@@ -1,44 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { SessionAlertComponent } from './auth/alert/session-alert.component';
-import { AuthComponent } from './auth/auth.component';
-import { AuthService } from './auth/auth.service';
-import { DataStoreService } from './auth/data-store.service';
-import { AuthGaurdService } from './auth/auth-gaurd.service';
-import { AuthInterceptorService } from './auth/auth-interceptor.service';
 import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './shell/app.component';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    AppRoutingModule,
-    SharedModule
+    SharedModule,
+    CoreModule,
+    AppRoutingModule
   ],
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    AuthComponent,
-    SessionAlertComponent,
+    AppComponent
   ],
-  providers: [
-    AuthService,
-    DataStoreService,
-    AuthGaurdService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptorService,
-      multi: true
-    }
-  ],
-  entryComponents: [SessionAlertComponent],
+  providers: [],
+  entryComponents: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

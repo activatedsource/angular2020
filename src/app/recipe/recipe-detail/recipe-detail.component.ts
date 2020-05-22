@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Recipe } from '../../shared/model/recipe.model';
-import { ShoppingService } from 'src/app/shopping/shopping.service';
-import { RecipeService } from '../recipe.service';
+import { ShoppingService } from 'src/app/core/services/shopping.service';
+import { RecipeService } from '../../core/services/recipe.service';
 
 
 @Component({

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ComponentFactoryResolver, ComponentRef } from '@angular/core';
-import { AuthService } from './auth/auth.service';
-import { PlaceholderDirective } from './shared/placeholder.directive';
-import { SessionAlertComponent } from './auth/alert/session-alert.component';
+import { PlaceholderDirective } from '../shared/placeholder.directive';
+import { SessionAlertComponent } from '../core/components/session-alert/session-alert.component';
+import { AuthService } from '../core/services/auth.service';
 
 @Component({
   selector: 'app-root',

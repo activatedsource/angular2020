@@ -23,7 +23,6 @@ import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.compo
         PlaceholderDirective,
         TruncateTextPipe,
         LoadingSpinnerComponent
-
     ]
 })
 export class SharedModule {

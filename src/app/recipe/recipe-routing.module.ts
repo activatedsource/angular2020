@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RecipeComponent } from './recipe.component';
-import { AuthGaurdService } from '../auth/auth-gaurd.service';
+import { AuthGaurdService } from '../core/services/auth-gaurd.service';
 import { RecipeBlankComponent } from './recipe-detail/recipe-blank.component';
 import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
-
 
 const routes: Routes = [
     {

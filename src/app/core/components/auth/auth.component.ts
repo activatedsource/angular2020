@@ -1,9 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { AuthService, AuthRequest, AuthResponse } from './auth.service';
 import { Observable } from 'rxjs';
-import { Router } from '@angular/router';
-import { take } from 'rxjs/operators';
+import { AuthService, AuthRequest, AuthResponse } from '../../services/auth.service';
 
 @Component({
   selector: 'app-auth',

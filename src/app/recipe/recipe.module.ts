@@ -9,7 +9,6 @@ import { RecipeItemComponent } from './recipe-item/recipe-item.component';
 import { RecipeBlankComponent } from './recipe-detail/recipe-blank.component';
 import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
-import { RecipeService } from './recipe.service';
 
 @NgModule({
     imports: [
@@ -25,9 +24,6 @@ import { RecipeService } from './recipe.service';
         RecipeBlankComponent,
         RecipeEditComponent,
         RecipeListComponent
-    ],
-    providers: [
-        RecipeService
     ]
 })
 export class RecipeModule {

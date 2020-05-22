@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
 import { throwError, BehaviorSubject, Subject } from 'rxjs';
-import { User } from './user.model';
 import { Router } from '@angular/router';
+import { User } from 'src/app/shared/model/user.model';
 import { DataStoreService } from './data-store.service';
 
 @Injectable()
